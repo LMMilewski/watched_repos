@@ -23,4 +23,4 @@ svn http://forget3d.googlecode.com/svn/trunk/ forget3d
 svn http://android-analyzer.googlecode.com/svn/trunk/ android-analyzer
 svn http://rokon.googlecode.com/svn/trunk/ rokon
 svn http://funnytouchscreen.googlecode.com/svn/trunk/ funnytouchscreen
-
+git git://github.com/facebook/facebook-android-sdk.git facebook-android
