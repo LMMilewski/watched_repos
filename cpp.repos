@@ -16,7 +16,6 @@ git git://github.com/FFmpeg/FFmpeg.git FFmpeg
 git git://github.com/WebKit/webkit.git webkit
 git git://github.com/antirez/redis.git redis
 git git://github.com/memcached/memcached.git memcached
-git git://github.com/membase/membase.git membase
 git git://github.com/vicaya/hypertable.git hypertable
 git git://github.com/scalien/keyspace.git keyspace
 hg https://golang.googlecode.com/hg/ golang
