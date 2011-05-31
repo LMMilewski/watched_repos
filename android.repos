@@ -1,0 +1,26 @@
+git git://github.com/k9mail/k-9.git k9
+svn http://zxing.googlecode.com/svn/trunk/ zxing
+svn http://libgdx.googlecode.com/svn/trunk/ libgdx
+svn http://openintents.googlecode.com/svn/trunk/ openintents
+svn http://opensudoku-android.googlecode.com/svn/trunk/ opensudoku
+svn http://apps-for-android.googlecode.com/svn/trunk/ apps-for-android
+svn http://android-wifi-tether.googlecode.com/svn/trunk/ android-wifi-tether
+svn http://android-vnc-viewer.googlecode.com/svn/trunk/ android-vnc-viewer
+hg https://mytracks.googlecode.com/hg/ mytracks
+hg https://foursquared.googlecode.com/hg/ foursquared
+svn http://remotedroid.googlecode.com/svn/trunk/ remotedroid
+svn http://gmote.googlecode.com/svn/trunk/ gmote
+svn http://open-gpstracker.googlecode.com/svn/trunk/ open-gpstracker
+hg https://andtweet.googlecode.com/hg/ andtweet
+svn http://scrollablecontacts.googlecode.com/svn/trunk/ scrollablecontacts
+svn http://musikcube.googlecode.com/svn/trunk/ musikcube
+svn http://thelements.googlecode.com/svn/trunk/ thelements
+svn http://ogameandroid.googlecode.com/svn/trunk/ ogameandroid
+svn http://achartengine.googlecode.com/svn/trunk/ achartengine
+svn http://android-gl.googlecode.com/svn/trunk/ android-gl
+svn http://andrico.googlecode.com/svn/trunk/ andrico
+svn http://forget3d.googlecode.com/svn/trunk/ forget3d
+svn http://android-analyzer.googlecode.com/svn/trunk/ android-analyzer
+svn http://rokon.googlecode.com/svn/trunk/ rokon
+svn http://funnytouchscreen.googlecode.com/svn/trunk/ funnytouchscreen
+
