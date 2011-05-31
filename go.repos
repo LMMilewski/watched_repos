@@ -1,0 +1,9 @@
+git git://github.com/nsf/gocode.git gocode
+git git://github.com/michaelmacinnis/oh.git oh
+git git://github.com/jsz/fettemama.git fettemama
+git git://github.com/kuroneko/gosqlite3.git gosqlite3
+git git://github.com/hoisie/web.go.git web.go
+git git://github.com/dustin/gomemcached.git gomemcached
+git git://github.com/hoisie/redis.go.git redis.go
+git git://github.com/mikejs/gomongo.git gomongo
+git git://github.com/tokuhirom/go-examples.git go-examples

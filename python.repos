@@ -1,0 +1,8 @@
+git git://github.com/facebook/tornado.git tornado
+git git://github.com/django/django.git django
+git git://github.com/sympy/sympy.git sympy
+git git://github.com/stump/fofix.git fofix
+svn http://nltk.googlecode.com/svn/trunk/ nltk
+hg https://python-twitter.googlecode.com/hg/ python-twitter
+svn http://feedparser.googlecode.com/svn/trunk/ feedparser
+svn http://pysal.googlecode.com/svn/trunk/ pysal

@@ -1,0 +1,47 @@
+#!/usr/bin/python
+
+import glob
+import os
+import sys
+
+# maps repo_type to pair
+# (command for cloning repo, command for updating repo)
+commands = {
+    "git" : ("git clone", "git pull"),
+    "hg"  : ("hg clone", "hg pull"),
+    "svn" : ("svn checkout", "svn update"),
+}
+# enum command_type
+CHECKOUT = 0
+UPDATE = 1
+
+def get_repo_list():
+    """
+    Reads repo definitions from files with '.repos' extension
+    returns list containing all entries in those files
+    """
+    repo_list = []
+    for fname in glob.glob("*.repos"):
+        repo_list.extend(open(fname, "r").readlines())
+    return [ repo.rstrip('\n') for repo in repo_list ]
+
+def fetch_repos(repo_list):
+    """
+    For every repo definition in repo_list do appropriate action.
+    Print every executed command and it status
+    Supress stdout and stderr
+    """
+    for repo_def in repo_list:
+        [ repo_type, repo_uri, repo_name ] = repo_def.split(" ")
+        if os.path.exists(repo_name):
+            cmd = 'cd {0} && {1}'.format(repo_name, commands[repo_type][UPDATE])
+        else:
+            cmd = '{0} {1} {2}'.format(commands[repo_type][CHECKOUT], repo_uri, repo_name)
+        print '%s...' % cmd,
+        sys.stdout.flush()
+        if os.system(cmd + " > /dev/null 2> /dev/null") == 0:
+            print " [ OK ]"
+        else:
+            print " [ FAILED ]"
+
+fetch_repos(get_repo_list())

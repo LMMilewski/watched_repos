@@ -1,0 +1,4 @@
+git git://github.com/rolandwalker/button-lock.git button-lock
+git git://github.com/magit/magit.git magit
+git git://github.com/defunkt/textmate.el.git textmate.el
+git git://github.com/jrhbailey/emacs-http-server.git emacs-http-server
