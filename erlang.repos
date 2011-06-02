@@ -22,3 +22,4 @@ git git://github.com/basho/rebar.git rebar
 git git://github.com/basho/riak.git riak
 git git://github.com/bjorng/wings.git wings
 git git://github.com/yariv/erlyweb.git erlyweb
+git git://github.com/mochi/mochiweb.git mochiweb
