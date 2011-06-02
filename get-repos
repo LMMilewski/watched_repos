@@ -25,7 +25,7 @@ def get_repo_list():
         repo_list.extend(open(fname, "r").readlines())
     return [ repo.rstrip('\n') for repo in repo_list ]
 
-def fetch_repos(repo_list):
+def fetch_repos(repo_list, update_old_repos):
     """
     For every repo definition in repo_list do appropriate action.
     Print every executed command and it status
@@ -34,7 +34,10 @@ def fetch_repos(repo_list):
     for repo_def in repo_list:
         [ repo_type, repo_uri, repo_name ] = repo_def.split(" ")
         if os.path.exists(repo_name):
-            cmd = 'cd {0} && {1}'.format(repo_name, commands[repo_type][UPDATE])
+            if update_old_repos:
+                cmd = 'cd {0} && {1}'.format(repo_name, commands[repo_type][UPDATE])
+            else:
+                cmd = "echo 'skipping {0}'".format(repo_name)
         else:
             cmd = '{0} {1} {2}'.format(commands[repo_type][CHECKOUT], repo_uri, repo_name)
         print '%s...' % cmd,
@@ -44,4 +47,11 @@ def fetch_repos(repo_list):
         else:
             print " [ FAILED ]"
 
-fetch_repos(get_repo_list())
+show_help = '--help' in sys.argv
+update_old_repos = '--update' in sys.argv
+
+if show_help:
+    print " --help          display this information"
+    print " --update        udpate repos that exist"
+else:
+    fetch_repos(get_repo_list(), update_old_repos)
