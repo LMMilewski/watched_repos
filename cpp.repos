@@ -25,3 +25,4 @@ svn http://googletest.googlecode.com/svn/trunk/ googletest
 svn http://googlemock.googlecode.com/svn/trunk/ googlemock
 svn http://google-glog.googlecode.com/svn/trunk/ glog
 svn http://google-gflags.googlecode.com/svn/trunk/ gflags
+git git://github.com/TTimo/doom3.gpl.git doom3
